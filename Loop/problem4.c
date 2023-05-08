@@ -5,13 +5,14 @@ void main()
 {
     int i, n, sum;
     float avg;
-    sum = 0;
-    n = 20;
+    sum = 0.0;
+
+    scanf("%d", &n);
 
     for (i = 1; i <= n; i++)
     {
         sum += i;
-        avg = sum / n;
+        avg = (double)sum / n;
     }
     printf(" the sum is: %d ", sum);
     printf("Avarage is : %f", avg);
